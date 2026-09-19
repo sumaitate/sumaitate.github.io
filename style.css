@@ -1,0 +1,149 @@
+:root {
+    --bg-main: #FDF5F2;
+    --text-main: #5A7D5C;
+    --text-light: #6B8E6F;
+    --box-bg: #FFFBF9;
+    --box-border: #E8D5CF;
+    --accent: #8BA88D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Garamond', serif;
+    color: var(--text-main);
+    background-color: var(--bg-main);
+    background-image:
+            radial-gradient(circle, var(--accent) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    line-height: 1.6;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 0.95rem;
+}
+
+nav a {
+    color: var(--text-main);
+    text-decoration: none;
+    margin: 0 0.75rem;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--accent);
+}
+
+section {
+    margin-bottom: 3rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--text-main);
+}
+
+section > div {
+    background-color: var(--box-bg);
+    border: 1px solid var(--box-border);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 3px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--text-main);
+}
+
+strong {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+section p {
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 2px solid var(--accent);
+    margin-top: 3rem;
+}
+
+footer h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: var(--text-main);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+footer a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    nav {
+        font-size: 0.85rem;
+    }
+    nav a {
+        margin: 0 0.4rem;
+    }
+    section > div {
+        padding: 1rem;
+    }
+}
